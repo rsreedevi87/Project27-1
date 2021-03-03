@@ -13,11 +13,15 @@ class Bob {
     }
     display(){
       var pos =this.body.position;
-      
+      push();
+      translate(pos.x,pos.y);
       ellipseMode(CENTER);
+     
       fill(255,144,85);
-      ellipse(pos.x, pos.y, this.radius);
       
+      ellipse(pos.x, pos.y, this.radius);
+     
+      pop();
     }
   };
   

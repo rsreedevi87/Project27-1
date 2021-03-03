@@ -30,6 +30,10 @@ class Chain{
         var Anchor2X = pointB.x+this.offsetX;
         var Anchor2Y = pointB.y+this.offsetY;
 
+        push();
+        translate(this.bodyA,this.bodyB);
+
         line(Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
+        pop();
     }
 }
