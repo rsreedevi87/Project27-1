@@ -19,7 +19,7 @@ class Bob {
      
       fill(255,144,85);
       
-      ellipse(pos.x, pos.y, this.radius);
+      ellipse(0,0,this.radius,this.radius);
      
       pop();
     }
